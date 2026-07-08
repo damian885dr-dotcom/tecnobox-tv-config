@@ -228,16 +228,16 @@
                      {
                          "id":  "tyc_sports",
                          "name":  "TyC Sports (1080p)",
-                         "category":  "Argentina",
+                         "category":  "Deportes",
                          "logo":  "",
                          "streams":  [
                                          "http://playcom.trapemn.tv:1935/transcoderip/tycsports.stream/playlist.m3u8"
                                      ]
                      },
                      {
-                         "id":  "prueba_mundial_2026",
-                         "name":  "Prueba mundial 2026",
-                         "category":  "Argentina",
+                         "id":  "Dsport",
+                         "name":  "Dsport",
+                         "category":  "Deportes",
                          "logo":  "",
                          "streams":  [
                                          "http://190.108.83.69:8000/play/a05w/index.m3u8"
