@@ -235,6 +235,15 @@
                                      ]
                      },
                      {
+                         "id":  "prueba_mundial_2026",
+                         "name":  "Prueba mundial 2026",
+                         "category":  "Argentina",
+                         "logo":  "",
+                         "streams":  [
+                                         "http://190.108.83.69:8000/play/a05w/index.m3u8"
+                                     ]
+                     },
+                     {
                          "id":  "urbana_teve",
                          "name":  "Urbana Tevé",
                          "category":  "Argentina",
