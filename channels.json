@@ -37,6 +37,24 @@
                                      ]
                      },
                      {
+                         "id":  "hbo2",
+                         "name":  "HBO2",
+                         "category":  "Argentina",
+                         "logo":  "https://i.postimg.cc/CMCQYWXJ/HBO-2-HD.png",
+                         "streams":  [
+                                         "http://xstr.cyou/live/Sofy_chavez_211/m2tXPw9QFFxd/e75092f9-8c34-4cb6-8029-d02442c0356d.m3u"
+                                     ]
+                     },
+                     {
+                         "id":  "gran_hermano_multicamaras",
+                         "name":  "Gran Hermano multicamaras",
+                         "category":  "Argentina",
+                         "logo":  "https://yt3.googleusercontent.com/o-WQeVTqsqCVHZ-x1FOX7WlbBdJckReo3dKJJNFy5wyxS8PxeY6ryEteLtZo6v9QNoSq_L25Cf8=s900-c-k-c0x00ffffff-no-rj",
+                         "streams":  [
+                                         "http://xstr.cyou/live/Sofy_chavez_211/m2tXPw9QFFxd/c35fa300-0aa7-4016-8fb5-f7ddbda3bc7f.m3u"
+                                     ]
+                     },
+                     {
                          "id":  "space",
                          "name":  "SPACE",
                          "category":  "Argentina",
