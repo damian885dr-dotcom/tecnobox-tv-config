@@ -1,42 +1,6 @@
 ﻿{
     "channels":  [
                      {
-                         "id":  "a24",
-                         "name":  "A24",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/OdhF7ym.png",
-                         "streams":  [
-                                         ""
-                                     ]
-                     },
-                     {
-                         "id":  "america",
-                         "name":  "América",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/Jt7dOQm.png",
-                         "streams":  [
-                                         ""
-                                     ]
-                     },
-                     {
-                         "id":  "aunar",
-                         "name":  "Aunar",
-                         "category":  "Argentina",
-                         "logo":  "http://tvabierta.weebly.com/uploads/5/1/3/4/51344345/aunar.png",
-                         "streams":  [
-                                         "https://5fb24b460df87.streamlock.net/live-cont.ar/mirador/playlist.m3u8"
-                                     ]
-                     },
-                     {
-                         "id":  "barricada_tv",
-                         "name":  "Barricada TV",
-                         "category":  "Argentina",
-                         "logo":  "https://www.barricadatv.org/?p=23082",
-                         "streams":  [
-                                         "https://live-ak.vimeocdn.com/exp=1696402364~acl=%2F9f41e203-241b-4eb7-b0b5-b1839903408f%2F%2A~hmac=d4819f301510676a986bfe610b664765ee2b1a23e1e1ca3214398f949a0b2778/9f41e203-241b-4eb7-b0b5-b1839903408f/hls.m3u8?min_seconds=30"
-                                     ]
-                     },
-                     {
                          "id":  "c5n",
                          "name":  "C5N",
                          "category":  "Argentina",
@@ -55,93 +19,12 @@
                                      ]
                      },
                      {
-                         "id":  "canal_e",
-                         "name":  "Canal E",
-                         "category":  "Argentina",
-                         "logo":  "https://i.ibb.co/y4pkxH3/Qtc8-M2-PG-400x400.jpg",
-                         "streams":  [
-                                         "https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/perfiltv/livestream2/chunks.m3u8"
-                                     ]
-                     },
-                     {
-                         "id":  "cine_ar",
-                         "name":  "Cine.AR",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/RPLyrIC.png",
-                         "streams":  [
-                                         "https://5fb24b460df87.streamlock.net/live-cont.ar/cinear/playlist.m3u8"
-                                     ]
-                     },
-                     {
-                         "id":  "comarca_tv",
-                         "name":  "Comarca TV",
-                         "category":  "Argentina",
-                         "logo":  "http://directostv.teleame.com/wp-content/uploads/2020/10/Comarca-TV-en-vivo-Online.png",
-                         "streams":  [
-                                         "https://video-weaver.ord56.hls.ttvnw.net/v1/playlist/Cq4FFLOPxq44Qy0kxjcr_wXuRRwjKU6gJ80Tc5eWRkaz5XdeNfeq7DzoNAstinu7BLtnw7jYDANX5yCDozdlS55_kYfuDyqQhwF0JpzU75lDUv5NOuUVWBwlP0m1Bh1JMn21v_OvA_teSCI7hcIFl2DoINrr8bHnpSS8EUvXNesfdX_LcfQH-clqftQ0sCreLIbTvxI5MyL6Wnm8jGh2yg48A2c_k9YHDH6TpM3tLo-pbRrrfByqMq-IoMQREf5DV_sTfHtAzinQQU3Np309s2ScJwcBlAjzz4VJ7svuJ1UbWBBylenSTnrXQW5Vws7OqG2kcoAHHpAQN6BQCpxaXO6dE7MLg7Nq6E7961fHEVSqFCRQg2Y5orbSsEwMo7_S4s5POZSQX1tn04QDuHfLixx-aBcbctSSFmI1CNZ3YDCEZVvWHOU6SyKQcsZeJCFLA1DsxqY3DeAn6n7xpPS4pdsizKqlqsT66liv_L-48h7jGujNZPDHge0fcgUs_7b7jlKJlKv-S_s1mGgLqPEUEQ8dhn5AugB0kfjAGgcTHIP_qLPRY0M7OikuBaMxh1pUpPkVG9AX4jCg1cwCgcfa64OP9ed4pwMjoiKm0dIfytTQ8hWjwXtkv16nJDfZ3kkqaMnM8ErZG6tRw-JVy3nRooKubY7Re0Fc1RHB85_eX2NYQD88N7r-UgaiO2ax0FQ-E_IdfuwSmp5oDy6Di6pT7r_zDRN3znbV64s4i-INUg-D2Leeq4xqYhe_Zhj-3AoxXDWCB0-DCc1kFEComkNpY01YA19zEm01TKLCbdaJwdC6bQpSEoJkOCoPAMnxm7oPNlqZRbhM4TVCJ34f4Y1guzaDomcEABl4Cii2UF-OhskRUZF-SUWjWdO6z62UqZagzG2QOTr6VBH-ItT_16fLsRUaDGTVKzgYHT8XcSqTkyABKgl1cy1lYXN0LTEwjQY.m3u8"
-                                     ]
-                     },
-                     {
-                         "id":  "cronica_tv",
-                         "name":  "Crónica TV",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/k2Ku8Ib.png",
-                         "streams":  [
-                                         "https://www.youtube.com/c/cronicatv/live"
-                                     ]
-                     },
-                     {
-                         "id":  "deportv",
-                         "name":  "DeporTV",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/iyYLNRt.png",
-                         "streams":  [
-                                         "https://5fb24b460df87.streamlock.net/live-cont.ar/deportv/playlist.m3u8"
-                                     ]
-                     },
-                     {
-                         "id":  "el_destape",
-                         "name":  "El Destape",
-                         "category":  "Argentina",
-                         "logo":  "https://yt3.ggpht.com/a-/AAuE7mAuXDwiY8UPwtAHrGXTXkAxBjdRqws2MJIN2A=s900-mo-c-c0xffffffff-rj-k-no",
-                         "streams":  [
-                                         "https://www.youtube.com/watch?v=JuskTxbUqmY"
-                                     ]
-                     },
-                     {
                          "id":  "el_nueve",
                          "name":  "El Nueve",
                          "category":  "Argentina",
                          "logo":  "https://i.imgur.com/EtcVSm4.png",
                          "streams":  [
                                          "http://190.7.19.197:232/play/a03k/index.m3u8"
-                                     ]
-                     },
-                     {
-                         "id":  "el_trece",
-                         "name":  "El Trece",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/ZK7AQFg.png",
-                         "streams":  [
-                                         "https://live-01-02-eltrece.vodgc.net/eltrecetv/index.m3u8"
-                                     ]
-                     },
-                     {
-                         "id":  "encuentro",
-                         "name":  "Encuentro",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/IyP2UIx.png",
-                         "streams":  [
-                                         "https://www.youtube.com/user/encuentro/live"
-                                     ]
-                     },
-                     {
-                         "id":  "ip_noticias",
-                         "name":  "IP Noticias",
-                         "category":  "Argentina",
-                         "logo":  "https://photos.live-tv-channels.org/tv-logo/ar-ip-noticias-6980-300x225.jpg",
-                         "streams":  [
-                                         "https://www.youtube.com/watch?v=IxQ2-6Y4y9w"
                                      ]
                      },
                      {
@@ -157,7 +40,7 @@
                          "id":  "space",
                          "name":  "SPACE",
                          "category":  "Argentina",
-                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPteTsp2zPkNGIK2aC8M1_bKG7FUZBaFHrg&usqp=CAU",
+                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPteTsp2zPkNGIK2aC8M1_bKG7FUZBaFHrg\u0026usqp=CAU",
                          "streams":  [
                                          "http://rlatinop.com:8880/pQzTAURqR83v/nq6gGmWXsehu/414501"
                                      ]
@@ -172,75 +55,12 @@
                                      ]
                      },
                      {
-                         "id":  "ln",
-                         "name":  "LN+",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/vJYzGt1.png",
-                         "streams":  [
-                                         "https://www.youtube.com/c/LaNacionMas/live"
-                                     ]
-                     },
-                     {
-                         "id":  "net_tv",
-                         "name":  "Net TV",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/EWmshtx.png",
-                         "streams":  [
-                                         "https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8"
-                                     ]
-                     },
-                     {
-                         "id":  "pakapaka",
-                         "name":  "Pakapaka",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/Q4zaCuM.png",
-                         "streams":  [
-                                         "https://www.youtube.com/user/CanalPakapaka/live"
-                                     ]
-                     },
-                     {
-                         "id":  "tec_tv",
-                         "name":  "Tec TV",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/EGCq1wc.png",
-                         "streams":  [
-                                         "https://tv.initium.net.ar:3939/live/tectvmainlive.m3u8"
-                                     ]
-                     },
-                     {
                          "id":  "telefe",
                          "name":  "Telefe",
                          "category":  "Argentina",
                          "logo":  "https://i.imgur.com/wrZfMXn.png",
                          "streams":  [
                                          "http://neospaxy.top:8080/1791770927814/c1aaa1785f37/10054"
-                                     ]
-                     },
-                     {
-                         "id":  "telemax",
-                         "name":  "Telemax",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/gfX0hdB.png",
-                         "streams":  [
-                                         "https://live-edge01.telecentro.net.ar/live/smil:tlx.smil/playlist.m3u8"
-                                     ]
-                     },
-                     {
-                         "id":  "television_publica",
-                         "name":  "Televisión Pública",
-                         "category":  "Argentina",
-                         "logo":  "https://i.imgur.com/4hYYpiu.png",
-                         "streams":  [
-                                         "https://www.youtube.com/user/TVPublicaArgentina/live"
-                                     ]
-                     },
-                     {
-                         "id":  "tn_todo_noticias",
-                         "name":  "TN Todo Noticias",
-                         "category":  "Argentina",
-                         "logo":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/TN_todo_noticias_logo.svg/200px-TN_todo_noticias_logo.svg.png",
-                         "streams":  [
-                                         "https://www.youtube.com/c/todonoticias/live"
                                      ]
                      },
                      {
@@ -268,15 +88,6 @@
                          "logo":  "",
                          "streams":  [
                                          "http://190.108.83.69:8000/play/a05w/index.m3u8"
-                                     ]
-                     },
-                     {
-                         "id":  "urbana_teve",
-                         "name":  "Urbana Tevé",
-                         "category":  "Argentina",
-                         "logo":  "https://yt3.ggpht.com/ytc/AKedOLQLeFMWMeoumi-o24ohLPXSEdNL5-oJ9W5oP5KnnA=s900-c-k-c0x00ffffff-no-rj",
-                         "streams":  [
-                                         "https://cdnhd.iblups.com/hls/DD3nXkAkWk.m3u8"
                                      ]
                      }
                  ]
