@@ -6,7 +6,7 @@
                          "category":  "Argentina",
                          "logo":  "https://i.imgur.com/OdhF7ym.png",
                          "streams":  [
-                                         "https://www.youtube.com/c/A24com/live"
+                                         ""
                                      ]
                      },
                      {
@@ -15,7 +15,7 @@
                          "category":  "Argentina",
                          "logo":  "https://i.imgur.com/Jt7dOQm.png",
                          "streams":  [
-                                         "https://www.youtube.com/c/americaenvivo/live"
+                                         ""
                                      ]
                      },
                      {
@@ -247,9 +247,9 @@
                          "id":  "tyc_sports",
                          "name":  "TyC Sports (1080p)",
                          "category":  "Deportes",
-                         "logo":  "",
+                         "logo":  "http://redworld.pro:8880/images/c5509c4b9b2f0749da4aed3a5ae3d7c3.png",
                          "streams":  [
-                                         "http://playcom.trapemn.tv:1935/transcoderip/tycsports.stream/playlist.m3u8"
+                                         "http://rlatinop.com:8880/pQzTAURqR83v/nq6gGmWXsehu/327918"
                                      ]
                      },
                      {
