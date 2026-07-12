@@ -163,6 +163,15 @@
                                      ]
                      },
                      {
+                         "id":  "foxsport",
+                         "name":  "FoxSport",
+                         "category":  "Argentina",
+                         "logo":  "https://asiagrandiptv.us/logo/foxsports.png",
+                         "streams":  [
+                                         "http://neospaxy.top:8080/1791770927814/c1aaa1785f37/9982"
+                                     ]
+                     },
+                     {
                          "id":  "ln",
                          "name":  "LN+",
                          "category":  "Argentina",
