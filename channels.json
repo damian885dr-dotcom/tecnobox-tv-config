@@ -154,6 +154,15 @@
                                      ]
                      },
                      {
+                         "id":  "space",
+                         "name":  "SPACE",
+                         "category":  "Argentina",
+                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPteTsp2zPkNGIK2aC8M1_bKG7FUZBaFHrg&usqp=CAU",
+                         "streams":  [
+                                         "http://rlatinop.com:8880/pQzTAURqR83v/nq6gGmWXsehu/414501"
+                                     ]
+                     },
+                     {
                          "id":  "ln",
                          "name":  "LN+",
                          "category":  "Argentina",
