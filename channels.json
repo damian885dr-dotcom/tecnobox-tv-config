@@ -162,6 +162,60 @@
                          "streams":  [
                                          "http://livetv-plus.com:8880/live/MgTv679/HUBAF/46976.ts"
                                      ]
+                     },
+                     {
+                         "id":  "america_tv_hd",
+                         "name":  "AR | AMERICA TV HD",
+                         "category":  "Argentina",
+                         "logo":  "https://upload.wikimedia.org/wikipedia/commons/d/da/America_TV_%282018%29.png",
+                         "streams":  [
+                                         "http://livetv-plus.com:8880/live/MgTv679/HUBAF/209741.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "tnt_sports_premium_cl",
+                         "name":  "CL | TNT SPORTS PREMIUM",
+                         "category":  "Chile",
+                         "logo":  "",
+                         "streams":  [
+                                         "http://livetv-plus.com:8880/live/MgTv679/HUBAF/439764.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "sony_channel_sd",
+                         "name":  "EN | SONY CHANNEL SD",
+                         "category":  "Entretenimiento",
+                         "logo":  "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Sony_Channel_Logo.png/600px-Sony_Channel_Logo.png",
+                         "streams":  [
+                                         "http://livetv-plus.com:8880/live/MgTv679/HUBAF/211310.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "nick_jr_sd",
+                         "name":  "INF | NICK JR SD",
+                         "category":  "Infantiles",
+                         "logo":  "https://upload.wikimedia.org/wikipedia/commons/0/05/Nick_Jr.logo.png",
+                         "streams":  [
+                                         "http://livetv-plus.com:8880/live/MgTv679/HUBAF/211305.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "disney_channel_sd",
+                         "name":  "INF | DISNEY CHANNEL SD",
+                         "category":  "Infantiles",
+                         "logo":  "http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/2014_Disney_Channel_logo.svg/640px-2014_Disney_Channel_logo.svg.png",
+                         "streams":  [
+                                         "http://livetv-plus.com:8880/live/MgTv679/HUBAF/211237.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "cartoon_network_sd",
+                         "name":  "INF | CARTOON NETWORK SD",
+                         "category":  "Infantiles",
+                         "logo":  "http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/640px-Cartoon_Network_2010_logo.svg.png",
+                         "streams":  [
+                                         "http://livetv-plus.com:8880/live/MgTv679/HUBAF/19458.ts"
+                                     ]
                      }
                  ]
 }
