@@ -6,7 +6,8 @@
                          "category":  "Argentina",
                          "logo":  "https://i.imgur.com/E3pamA5.png",
                          "streams":  [
-                                         "http://190.7.19.197:232/play/a040/index.m3u8"
+                                         "http://190.7.19.197:232/play/a040/index.m3u8",
+                                         "http://dplatino.net:80/live/123456/123456/81273.ts"
                                      ]
                      },
                      {
@@ -33,7 +34,8 @@
                          "category":  "Argentina",
                          "logo":  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/512px-HBO_logo.svg.png",
                          "streams":  [
-                                         "http://rlatinop.com:8880/pQzTAURqR83v/nq6gGmWXsehu/414468"
+                                         "http://rlatinop.com:8880/pQzTAURqR83v/nq6gGmWXsehu/414468",
+                                         "http://dplatino.net:80/live/123456/123456/1240.ts"
                                      ]
                      },
                      {
@@ -42,7 +44,8 @@
                          "category":  "Argentina",
                          "logo":  "https://i.postimg.cc/CMCQYWXJ/HBO-2-HD.png",
                          "streams":  [
-                                         "http://xstr.cyou/live/Sofy_chavez_211/m2tXPw9QFFxd/e75092f9-8c34-4cb6-8029-d02442c0356d.m3u"
+                                         "http://xstr.cyou/live/Sofy_chavez_211/m2tXPw9QFFxd/e75092f9-8c34-4cb6-8029-d02442c0356d.m3u",
+                                         "http://dplatino.net:80/live/123456/123456/435985.ts"
                                      ]
                      },
                      {
@@ -51,7 +54,9 @@
                          "category":  "Argentina",
                          "logo":  "https://yt3.googleusercontent.com/o-WQeVTqsqCVHZ-x1FOX7WlbBdJckReo3dKJJNFy5wyxS8PxeY6ryEteLtZo6v9QNoSq_L25Cf8=s900-c-k-c0x00ffffff-no-rj",
                          "streams":  [
-                                         "http://xstr.cyou/live/Sofy_chavez_211/m2tXPw9QFFxd/c35fa300-0aa7-4016-8fb5-f7ddbda3bc7f.m3u"
+                                         "http://xstr.cyou/live/Sofy_chavez_211/m2tXPw9QFFxd/c35fa300-0aa7-4016-8fb5-f7ddbda3bc7f.m3u",
+                                         "http://dplatino.net:80/live/123456/123456/453157.ts",
+                                         "http://dplatino.net:80/live/123456/123456/454930.ts"
                                      ]
                      },
                      {
@@ -60,7 +65,8 @@
                          "category":  "Argentina",
                          "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPteTsp2zPkNGIK2aC8M1_bKG7FUZBaFHrg\u0026usqp=CAU",
                          "streams":  [
-                                         "http://rlatinop.com:8880/pQzTAURqR83v/nq6gGmWXsehu/414501"
+                                         "http://rlatinop.com:8880/pQzTAURqR83v/nq6gGmWXsehu/414501",
+                                         "http://dplatino.net:80/live/123456/123456/1281.ts"
                                      ]
                      },
                      {
@@ -141,7 +147,7 @@
                      },
                      {
                          "id":  "discovery_hh_lat",
-                         "name":  "CUL | DISCOVERY H&H LAT",
+                         "name":  "CUL | DISCOVERY H\u0026H LAT",
                          "category":  "Cultura",
                          "logo":  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Discovery_Home_%26_Health_logo.svg/1200px-Discovery_Home_%26_Health_logo.svg.png",
                          "streams":  [
@@ -220,6 +226,80 @@
                          "logo":  "http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/640px-Cartoon_Network_2010_logo.svg.png",
                          "streams":  [
                                          "http://livetv-plus.com:8880/live/MgTv679/HUBAF/19458.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "a24",
+                         "name":  "AR | A24 HD",
+                         "category":  "Argentina",
+                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_T246MMRs8f0eT4jtwWWOlXUOuUNIGPYT5AJEzprrvA\u0026s=10",
+                         "streams":  [
+                                         "http://dplatino.net:80/live/123456/123456/81290.ts",
+                                         "http://dplatino.net:80/live/123456/123456/81289.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "cinecanal",
+                         "name":  "CINE | CINECANAL HD",
+                         "category":  "Cine Premium",
+                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfY_V6-B2g_kEqycv8FnYBzZZca7242M3uLw\u0026usqp=CAU",
+                         "streams":  [
+                                         "http://dplatino.net:80/live/123456/123456/1251.ts",
+                                         "http://dplatino.net:80/live/123456/123456/1252.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "tnt_hd",
+                         "name":  "CINE | TNT HD",
+                         "category":  "Cine Premium",
+                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREx6xag_8jHvToBLGBqlHfK3Y6oMAi5cqnLw\u0026usqp=CAU",
+                         "streams":  [
+                                         "http://dplatino.net:80/live/123456/123456/1245.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "hbo_family",
+                         "name":  "CINE | HBO FAMILY HD",
+                         "category":  "Cine Premium",
+                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA4WC_DVLdy7I-kMJhcpStbdiBOe00hos0AA\u0026usqp=CAU",
+                         "streams":  [
+                                         "http://dplatino.net:80/live/123456/123456/52.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "golden_plus",
+                         "name":  "CINE | GOLDEN PLUS SD",
+                         "category":  "Cine Premium",
+                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEUkFenrLxGFpEKOzzTEl2crLHBNePJehWFQ\u0026usqp=CAU",
+                         "streams":  [
+                                         "http://dplatino.net:80/live/123456/123456/53942.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "warner_hd",
+                         "name":  "CINE | WARNER HD",
+                         "category":  "Cine Premium",
+                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHNIfv7VLUeS2w8eoF4b-k5psDxmpHYqkxew\u0026usqp=CAU",
+                         "streams":  [
+                                         "http://dplatino.net:80/live/123456/123456/1259.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "discovery_channel_sd",
+                         "name":  "Discovery Channel SD",
+                         "category":  "Cultura",
+                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2he_V5EXXTHItP1KU4wxitqgJH_SHy6yBRNYEx-AXwg\u0026s=10",
+                         "streams":  [
+                                         "http://dplatino.net:80/live/123456/123456/53458.ts"
+                                     ]
+                     },
+                     {
+                         "id":  "discovery_turbo_hd",
+                         "name":  "DISCOVERY Turbo HD",
+                         "category":  "Cultura",
+                         "logo":  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-oy2o2z1-V66saeYPTRxqsuBGhnmzE-E04IAt7d6c8w\u0026s=10",
+                         "streams":  [
+                                         "http://dplatino.net:80/live/123456/123456/53467.ts"
                                      ]
                      }
                  ]
