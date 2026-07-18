@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TecnoBox Tv Panel</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050813;
+      --panel: #0d1524;
+      --panel2: #131f33;
+      --text: #f7faff;
+      --muted: #9aa8bd;
+      --primary: #00d6ff;
+      --green: #15c47e;
+      --red: #ff5d75;
+      --line: rgba(71, 216, 255, .22);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at 80% 0%, rgba(0, 214, 255, .14), transparent 34%), var(--bg);
+      color: var(--text);
+    }
+    main {
+      width: min(1180px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 32px 0;
+    }
+    header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+    h1 { margin: 0; font-size: 34px; }
+    h2 { margin: 0 0 16px; font-size: 20px; }
+    p { color: var(--muted); margin: 8px 0 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 18px;
+    }
+    section {
+      background: rgba(13, 21, 36, .9);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    label {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      margin: 14px 0 7px;
+    }
+    input, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 13px 14px;
+      background: #09111f;
+      color: var(--text);
+      font-size: 15px;
+      outline: none;
+    }
+    input:focus, textarea:focus { border-color: var(--primary); }
+    .row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    button {
+      border: 0;
+      border-radius: 10px;
+      padding: 12px 15px;
+      background: var(--primary);
+      color: #00121a;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    button.secondary {
+      background: #19263b;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+    button.danger { background: var(--red); color: white; }
+    button.ok { background: var(--green); color: #00160d; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 10px;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      vertical-align: middle;
+    }
+    th { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    td { font-size: 14px; }
+    .badge {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-weight: 800;
+      font-size: 12px;
+    }
+    .active { background: rgba(21, 196, 126, .18); color: #4dffa9; }
+    .expired { background: rgba(255, 93, 117, .18); color: #ff8c9d; }
+    .muted { color: var(--muted); }
+    .status {
+      min-height: 22px;
+      margin-top: 14px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    @media (max-width: 860px) {
+      .grid { grid-template-columns: 1fr; }
+      header { display: block; }
+      .row { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>TecnoBox Tv Panel</h1>
+        <p>Crear usuarios, renovar vencimientos y activar o desactivar accesos.</p>
+      </div>
+      <button class="secondary" id="reloadBtn">Recargar</button>
+    </header>
+
+    <div class="grid">
+      <section>
+        <h2>Conexion GitHub</h2>
+        <label>Token de GitHub</label>
+        <input id="token" type="password" placeholder="github_pat_...">
+        <p class="muted">El token no se guarda en el archivo. Solo se usa desde este navegador para actualizar users.json.</p>
+
+        <label>Usuario nuevo</label>
+        <input id="username" autocomplete="off" placeholder="cliente01">
+
+        <label>Contrasena</label>
+        <input id="password" type="text" autocomplete="off" placeholder="1234">
+
+        <label>Vence</label>
+        <input id="expires" type="date">
+
+        <label>Notas</label>
+        <textarea id="notes" rows="3" placeholder="TV Box dormitorio, telefono, etc."></textarea>
+
+        <div class="row" style="margin-top:16px">
+          <button id="createBtn">Crear usuario</button>
+          <button class="secondary" id="clearBtn">Limpiar</button>
+        </div>
+        <div class="status" id="status"></div>
+      </section>
+
+      <section>
+        <h2>Usuarios</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Usuario</th>
+              <th>Vence</th>
+              <th>Estado</th>
+              <th>Notas</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="usersBody"></tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const owner = "damian885dr-dotcom";
+    const repo = "tecnobox-tv-config";
+    const branch = "main";
+    const path = "users.json";
+    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+    let fileSha = "";
+    let usersDoc = { version: 1, users: [] };
+
+    const $ = (id) => document.getElementById(id);
+
+    function setStatus(text, error = false) {
+      $("status").textContent = text;
+      $("status").style.color = error ? "var(--red)" : "var(--muted)";
+    }
+
+    function nextMonthDate(from = new Date()) {
+      const d = new Date(from);
+      d.setMonth(d.getMonth() + 1);
+      return d.toISOString().slice(0, 10);
+    }
+
+    async function sha256(text) {
+      const data = new TextEncoder().encode(text);
+      const hash = await crypto.subtle.digest("SHA-256", data);
+      return [...new Uint8Array(hash)].map((b) => b.toString(16).padStart(2, "0")).join("");
+    }
+
+    function isExpired(dateText) {
+      const today = new Date().toISOString().slice(0, 10);
+      return !dateText || dateText < today;
+    }
+
+    async function loadUsers() {
+      setStatus("Cargando usuarios...");
+      const res = await fetch(`${apiUrl}?ref=${branch}&t=${Date.now()}`, {
+        headers: { Accept: "application/vnd.github+json" }
+      });
+      if (!res.ok) throw new Error(`No se pudo leer users.json (${res.status})`);
+      const data = await res.json();
+      fileSha = data.sha;
+      usersDoc = JSON.parse(decodeURIComponent(escape(atob(data.content.replace(/\n/g, "")))));
+      usersDoc.users ||= [];
+      renderUsers();
+      setStatus(`Usuarios cargados: ${usersDoc.users.length}`);
+    }
+
+    async function saveUsers(message) {
+      const token = $("token").value.trim();
+      if (!token) throw new Error("Pegá tu token de GitHub.");
+      usersDoc.version = (usersDoc.version || 1) + 1;
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(usersDoc, null, 2) + "\n")));
+      const res = await fetch(apiUrl, {
+        method: "PUT",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Accept: "application/vnd.github+json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          message,
+          content,
+          sha: fileSha,
+          branch
+        })
+      });
+      if (!res.ok) {
+        const text = await res.text();
+        throw new Error(`GitHub no guardo el archivo (${res.status}): ${text}`);
+      }
+      const saved = await res.json();
+      fileSha = saved.content.sha;
+      renderUsers();
+      setStatus("Guardado correctamente.");
+    }
+
+    function renderUsers() {
+      const body = $("usersBody");
+      body.innerHTML = "";
+      usersDoc.users
+        .slice()
+        .sort((a, b) => a.username.localeCompare(b.username))
+        .forEach((user) => {
+          const expired = isExpired(user.expires_at);
+          const active = user.active !== false && !expired;
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td><strong>${escapeHtml(user.username)}</strong></td>
+            <td>${escapeHtml(user.expires_at || "")}</td>
+            <td><span class="badge ${active ? "active" : "expired"}">${active ? "ACTIVO" : "VENCIDO"}</span></td>
+            <td class="muted">${escapeHtml(user.notes || "")}</td>
+            <td class="row">
+              <button class="ok" data-action="renew" data-user="${escapeHtml(user.username)}">Renovar</button>
+              <button class="secondary" data-action="toggle" data-user="${escapeHtml(user.username)}">${user.active === false ? "Activar" : "Desactivar"}</button>
+            </td>`;
+          body.appendChild(tr);
+        });
+    }
+
+    async function createUser() {
+      const username = $("username").value.trim();
+      const password = $("password").value;
+      const expires = $("expires").value || nextMonthDate();
+      const notes = $("notes").value.trim();
+      if (!username || !password) throw new Error("Completá usuario y contraseña.");
+      const existing = usersDoc.users.find((u) => u.username.toLowerCase() === username.toLowerCase());
+      const passwordHash = await sha256(password);
+      if (existing) {
+        existing.password_hash = passwordHash;
+        existing.expires_at = expires;
+        existing.active = true;
+        existing.notes = notes;
+      } else {
+        usersDoc.users.push({
+          username,
+          password_hash: passwordHash,
+          expires_at: expires,
+          active: true,
+          created_at: new Date().toISOString(),
+          notes
+        });
+      }
+      await saveUsers(`Update user ${username}`);
+      clearForm();
+    }
+
+    async function renewUser(username) {
+      const user = usersDoc.users.find((u) => u.username === username);
+      if (!user) return;
+      const base = user.expires_at && !isExpired(user.expires_at) ? new Date(`${user.expires_at}T00:00:00`) : new Date();
+      user.expires_at = nextMonthDate(base);
+      user.active = true;
+      await saveUsers(`Renew user ${username}`);
+    }
+
+    async function toggleUser(username) {
+      const user = usersDoc.users.find((u) => u.username === username);
+      if (!user) return;
+      user.active = user.active === false;
+      await saveUsers(`Toggle user ${username}`);
+    }
+
+    function clearForm() {
+      $("username").value = "";
+      $("password").value = "";
+      $("expires").value = nextMonthDate();
+      $("notes").value = "";
+    }
+
+    function escapeHtml(text) {
+      return String(text).replace(/[&<>"']/g, (m) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+      }[m]));
+    }
+
+    $("createBtn").addEventListener("click", () => createUser().catch((e) => setStatus(e.message, true)));
+    $("clearBtn").addEventListener("click", clearForm);
+    $("reloadBtn").addEventListener("click", () => loadUsers().catch((e) => setStatus(e.message, true)));
+    $("usersBody").addEventListener("click", (event) => {
+      const button = event.target.closest("button");
+      if (!button) return;
+      const username = button.dataset.user;
+      const action = button.dataset.action;
+      const run = action === "renew" ? renewUser(username) : toggleUser(username);
+      run.catch((e) => setStatus(e.message, true));
+    });
+
+    clearForm();
+    loadUsers().catch((e) => setStatus(e.message, true));
+  </script>
+</body>
+</html>
