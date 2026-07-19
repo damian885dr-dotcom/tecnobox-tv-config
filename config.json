@@ -1,9 +1,10 @@
 ﻿{
     "app_name":  "TecnoBox Tv",
-    "channels_url":  "https://damian885dr-dotcom.github.io/tecnobox-tv-config/channels.json",
-    "users_url":  "https://damian885dr-dotcom.github.io/tecnobox-tv-config/users.json",
+    "channels_url":  "",
+    "users_url":  "",
+    "api_base_url":  "https://tecnobox-tv-api.damian885-dr.workers.dev",
     "auth_required":  true,
-    "version":  20,
+    "version":  21,
     "maintenance":  false,
     "message":  ""
 }
